@@ -1,6 +1,6 @@
 (function (global) {
 
-/************* CUSTOMIZE HERE *************/
+/* ---8<------------------------- CUSTOMIZE HERE ------------------------->8--- */
 
     // If true, no requests will be sent to the classifier and
     // a simulation will be run.
@@ -44,7 +44,7 @@
         llama: 0.2,
     };
 
-/********* CUSTOMIZATIONS END HERE ********/
+/* ---8<--------------------- CUSTOMIZATIONS END HERE -------------------->8--- */
 
     let canvas;
     let lastLabeledFrameId = 0;
@@ -139,7 +139,6 @@
         const threshold = getThreshold();
         return Object.keys(prediction).filter(k => prediction[k] >= threshold);
     }
-
 
     function prependToRoll(frameId, frame) {
         const miniature = document.createElement('img');

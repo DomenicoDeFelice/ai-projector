@@ -81,12 +81,6 @@ body {
     transition: opacity 0s linear;
 }
 
-.NoWebcam-root {
-    font-size: 14pt;
-    padding: 8px 4px;
-    font-weight: bolder;
-}
-
 .hidden {
     display: none;
 }
