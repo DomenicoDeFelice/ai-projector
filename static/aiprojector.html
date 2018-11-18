@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>&#x1F4FD; AI Projector</title>
+    <link rel="stylesheet" type="text/css" href="aiprojector.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <main>
+      <div id="logo-panel">AI<br>Projector<br>&#x1F4FD;</div>
+      <div id="input-source-panel" data-source="none">
+        <div id="input-sources">
+          <div class="source-selection">
+            <button data-source="camera">Camera &#x1F4F9;</button>
+            <button data-source="video-selection">Video &#x1F4FA;</button>
+            <button data-source="none">None &#x274C;</button>
+          </div>
+          <div class="video-selection">
+            <input id="video-url" type="text" value="http://127.0.0.1:5000/static/demo.mp4">
+            <button data-source="video">Play &#x25B6;&#xFE0F;</button>
+          </div>
+        </div>
+        <div id="video-root">
+          <video id="video" crossOrigin="Anonymous" autoplay controls loop></video>
+          <div id="start-message">&#x2B06; Select an input source &#x2B06;</div>
+          <div id="spinner"></div>
+          <input id="threshold-slider" type="range" min="0" max="100" value="30">
+        </div>
+      </div>
+      <div id="frames-roll-panel"></div>
+    </main>
+    <div id="threshold-label"></div>
+    <div id="predictions"></div>
+    <div class="title">Predictions</div>
+    <div id="prediction-history"></div>
+    <script src="aiprojector.js"></script>
+  </body>
+</html>
